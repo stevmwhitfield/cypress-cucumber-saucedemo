@@ -6,6 +6,7 @@ import { createEsbuildPlugin } from '@badeball/cypress-cucumber-preprocessor/esb
 export default defineConfig({
     e2e: {
         baseUrl: 'https://www.saucedemo.com/',
+        blockHosts: ['events.backtrace.io'],
         specPattern: '**/*.feature',
         async setupNodeEvents(on, config) {
             // This is required for the preprocessor to be able to generate JSON reports after each run, and more,
