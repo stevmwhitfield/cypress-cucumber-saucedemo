@@ -16,4 +16,12 @@ export default class InventoryPage {
     getProductImages() {
         return cy.get('img.inventory_item_img');
     }
+
+    getProducts() {
+        return cy.get('[data-test="inventory-item"]');
+    }
+
+    getSortDropdown() {
+        return cy.get('[data-test="product-sort-container"]');
+    }
 }
