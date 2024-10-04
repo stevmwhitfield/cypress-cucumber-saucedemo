@@ -24,4 +24,20 @@ export default class InventoryPage {
     getSortDropdown() {
         return cy.get('[data-test="product-sort-container"]');
     }
+
+    getAddToCartButton() {
+        return cy.get('[data-test="add-to-cart-sauce-labs-backpack"]');
+    }
+
+    getRemoveFromCartButton() {
+        return cy.get('[data-test="remove-sauce-labs-backpack"]');
+    }
+
+    getCartLink() {
+        return cy.get('[data-test="shopping-cart-link"]');
+    }
+
+    getCartBadge() {
+        return cy.get('[data-test="shopping-cart-badge"]');
+    }
 }
